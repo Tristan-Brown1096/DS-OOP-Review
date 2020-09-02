@@ -1,7 +1,8 @@
 import unittest
-from players import Player, Quarterback
+from players import Player, Quarterback, Defender
 from possible_values import *
 from game import Game
+from season import generate_rand_games
 # TODO - some things you can add...
 
 # import the `season` file and make sure generate_random_games only

@@ -25,6 +25,15 @@ class Player:
         return total_points
 
 
+class Defender(Player):
+    def __init__(self, name=None, tackles=15, sacks=2, interceptions=0, tackles_for_loss=5,
+                 safety=None):
+        super().__init__(name=name, safety=safety, interceptions=interceptions)
+        self.tackles = tackles
+        self.sacks = sacks
+        self.tackles_for_loss = tackles_for_loss
+
+
 class Quarterback(Player):
     '''Override certain parameters of the default Player class and add some
     functionality unique to quarterbacks
